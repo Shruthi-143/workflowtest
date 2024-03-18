@@ -8,7 +8,7 @@ on:
     - main    
   workflow_dispatch: 
 jobs:
-  validate-config:
+  workflow-call:
     runs-on: ubuntu-latest
     steps:
     #- name: Checkout
