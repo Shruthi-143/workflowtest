@@ -12,7 +12,7 @@ jobs:
    workflow-call:
     runs-on: ubuntu-latest
     env: 
-     GH_TOKEN: ${{ secrets.GH_TOKEN }}
+     GH_TOKEN: ${{secrets.GH_NEW}}
     steps:
     #- name: Checkout
       #uses: actions/checkout@v4
