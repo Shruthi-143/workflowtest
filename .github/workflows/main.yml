@@ -8,11 +8,11 @@ on:
     - main    
   workflow_dispatch: 
 
-jobs:
-  workflow-call:
+jobs: 
+   env: 
+    GH_TOKEN: ${{ secrets.GH_TOKEN }}
+   workflow-call:
     runs-on: ubuntu-latest
-    env:
-     GH_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
     #- name: Checkout
       #uses: actions/checkout@v4
