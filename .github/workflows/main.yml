@@ -14,5 +14,5 @@ jobs:
     #- name: Checkout
       #uses: actions/checkout@v4
     - name : Trigering update
-      run : echo ${{github}}
+      run : echo ${{github.event.repository.name}}
       #uses: ./.github/workflows/update-grm.yml 
